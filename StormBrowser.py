@@ -108,9 +108,15 @@ class Window(QMainWindow):
      self.URLBar.setText(url.toString())
      self.URLBar.setCursorPosition(0)
 
+def main():
+     app = QApplication(argv)
+     app.setApplicationName('Storm Browser')
+     window = Window()
+     app.exec_()
 
-app = QApplication(argv)
-app.setApplicationName('Storm Browser')
+if __name__=='__main__':
+   main()
+     
 
-window = Window()
-app.exec_()
+# Developed by @lavanyan
+
